@@ -3,6 +3,7 @@ from litellm import embedding
 import fitz
 import json
 
+# 实现了文档分割以及文本嵌入的简单RAG示例
 rag_simple = Blueprint('rag_simple', __name__)
 
 def _extract_text_from_pdf(pdf_path):
